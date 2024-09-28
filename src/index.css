@@ -1,0 +1,54 @@
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #686868;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}
+
+.gradient-border-orange {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #ff8400 0%, #f0ce93 100%) 1;
+}
+.gradient-border-blue {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #0052f0 0%, #88d7ff 100%) 1;
+  border-radius: 10px;
+}
+.gradient-border-pink {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #e432b3 0%, #faa2a2 100%) 1;
+}
+.gradient-border-black {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #353535 0%, #b1b1b1 100%) 1;
+}
