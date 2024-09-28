@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         mainGray: "#646464",
+        textAb: "#333333",
+        textContent: "#22222",
       },
       backgroundImage: {
         customGrandient:
