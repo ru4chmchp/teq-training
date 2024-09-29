@@ -17,13 +17,21 @@ const Navbar = () => {
           <li>
             <Link to="/about">ABOUT US</Link>
           </li>
-          <li>CAREERS</li>
-          <li>NEWS</li>
-          <li>GALLERY</li>
+          <li>
+            <Link to="/carrers">CARRERS</Link>
+          </li>
+          <li>
+            <Link to="/news">NEWS</Link>
+          </li>
+          <li>
+            <Link to="/gallery">GALLERY</Link>
+          </li>
         </ul>
 
         <div className="ml-10 cursor-pointer">
-          <Blackbutton text="CONTACT US" />
+          <Link to="/contact">
+            <Blackbutton text="CONTACT US" />
+          </Link>
         </div>
       </div>
     </div>
