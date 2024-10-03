@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layouts/Navbar";
 import SearchBar from "../components/Searchbar";
 import { Textcenter } from "../components/Textcenter";
 

@@ -1,4 +1,5 @@
-import Navbar from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import Navbar from "../components/layouts/Navbar";
 import { Textcenter } from "../components/Textcenter";
 
 export const Carrers = () => {
@@ -295,6 +296,7 @@ export const Carrers = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

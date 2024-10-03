@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 import { Footer } from "./Footer";
-import Navbar from "./Navbar";
+import Navbar from "./layouts/Navbar";
 import Blackbutton from "./Blackbutton";
 
 const NotFound = () => {

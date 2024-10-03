@@ -1,7 +1,6 @@
 import { Footer } from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layouts/Navbar";
 
-// src/Gallery.js
 const Gallery = () => {
   const items = [
     { title: "Company Trip", photos: 9, image: "./src/assets/companytrip.svg" }, // Adjust the image path
@@ -17,10 +16,10 @@ const Gallery = () => {
       <Navbar />
       <div className="container mx-auto p-4">
         <h1 className="text-3xl font-bold text-center mb-8">Gallery</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {items.map((item, index) => (
             <div key={index} className="relative group">
-              <div className="bg-gray-300 h-full rounded-lg overflow-hidden">
+              <div className="bg-gray-300 h-full rounded-lg overflow-hidden shadow-effect">
                 <img
                   src={item.image}
                   alt={item.title}

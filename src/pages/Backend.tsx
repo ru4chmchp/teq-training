@@ -1,5 +1,5 @@
 import { Footer } from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layouts/Navbar";
 import { Textcenter } from "../components/Textcenter";
 import Blackbutton from "../components/Blackbutton";
 import ApplicationForm from "../components/Applicationform";

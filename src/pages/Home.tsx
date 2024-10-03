@@ -1,6 +1,6 @@
 import Blackbutton from "../components/Blackbutton";
 import { Carouselintro } from "../components/Carouselintro";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/layouts/Navbar";
 import { Textcenter } from "../components/Textcenter";
 function Home() {
   return (
@@ -71,7 +71,7 @@ function Home() {
             subclass="text-[#616161] font-semibold text-2xl"
           />
         </div>
-        <div className="flex justify-around items-center bg-gray-100 w-full gap-32">
+        <div className="flex flex-wrap justify-center md:justify-around items-center bg-gray-100 w-full gap-6 md:gap-32 p-4">
           <div className="flex flex-col items-center">
             <img
               src="./src/assets/offwork.svg"
@@ -112,7 +112,7 @@ function Home() {
             />
             <p className="text-mainGray mt-2 text-sm">EazyProcess</p>
           </div>
-          <div className="flex flex-col items-center bg-white p-4 shadow-md ">
+          <div className="flex flex-col items-center bg-white p-4 shadow-md">
             <img
               src="./src/assets/eazymock.svg"
               alt="EazyMock Icon"
@@ -121,6 +121,7 @@ function Home() {
             <p className="text-orange-500 font-bold mt-2 text-sm">EazyMock</p>
           </div>
         </div>
+
         <div className="flex items-center p-4 rounded-lg my-10">
           <div className="flex items-center space-x-3">
             <img
@@ -201,7 +202,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="relative grid grid-cols-4 gap-40 mt-7">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-40 mt-7">
           <div className="flex flex-col items-center relative z-10">
             <div className="border-2 rounded-full border-black">
               <img src="./src/assets/cv.svg" alt="" className="p-2 m-2" />
@@ -233,8 +234,11 @@ function Home() {
             <div className="border-l h-6 w-1 border-black mx-auto border-dashed "></div>
             <div className="p-1 rounded-full bg-black mx-auto border-2 h-4 w-4"></div>
           </div>
-          <div className="absolute bottom-2 left-1/2 w-[120%] h-0.5 bg-black z-0 transform -translate-x-1/2"></div>
+
+          {/* Đường ngang */}
+          <div className="absolute bottom-2 left-1/2 w-full sm:w-[110%] lg:w-[120%] h-0.5 bg-black z-0 transform -translate-x-1/2"></div>
         </div>
+
         <div className="w-full border-dashed border-2 my-10"></div>
         <Textcenter text="Lastest News" subclass="font-semibold pt-0 mt-0" />
         <div className="grid grid-cols-3 gap-5">
@@ -271,68 +275,72 @@ function Home() {
         </div>
         <Textcenter text="Lastest News" subclass="font-semibold pt-0 mt-0" />
         <div className="relative">
-          <div className="grid grid-rows-2 p-2 m-2 items-start gap-2">
-            <div className="grid grid-flow-col auto-cols-max gap-2 items-start">
+          <div className="grid grid-rows-2 p-2 m-2 gap-4">
+            {/* Hàng 1 */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 items-start">
               <div>
                 <img
                   src="./src/assets/gallery1.svg"
                   alt="Gallery 1"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./src/assets/gallery2.svg"
                   alt="Gallery 2"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./src/assets/gallery3.svg"
                   alt="Gallery 3"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./src/assets/gallery4.svg"
                   alt="Gallery 4"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </div>
-            <div className="grid grid-flow-col auto-cols-max gap-2 items-start">
+
+            {/* Hàng 2 */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 items-start">
               <div>
                 <img
                   src="./src/assets/gallery5.svg"
                   alt="Gallery 5"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./src/assets/gallery6.svg"
                   alt="Gallery 6"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./src/assets/gallery7.svg"
                   alt="Gallery 7"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
                 <img
                   src="./src/assets/gallery8.svg"
                   alt="Gallery 8"
-                  className="max-w-full"
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </div>
           </div>
+
           <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
         </div>
 
